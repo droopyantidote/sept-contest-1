@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        nav ul {
+            list-style-type: none; 
+            padding: 0; 
+            margin: 0; 
+        }
+    
+        nav li {
+            display: inline; 
+            margin-right: 20px; 
+            position: relative;
+            padding-right: 20px;
+        }
+        nav li:last-child {
+            margin-right: 0; /* Remove margin-right for the last item */
+        }
+        nav li a {
+        text-decoration: none;
+    }
+    nav li::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%; /* Adjust the height of the horizontal line */
+        background-color: black; /* Adjust the color of the line */
+    }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Header Section -->
+     <header>
+        <h1>Welcome to Kolkata</h1>
+        <p>The City of Joy awaits you with open arms</p>
+    </header>
+    <hr>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#city-description">City Description</a></li>
+            <li><a href="#attractions">Attractions</a></li>
+            <li><a href="#city-statistics">City Statistics</a></li>
+            <li><a href="#citizen-feedback">Citizen Feedback</a></li>
+            <li><a href="#quotes">Quotes from Citizens</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <!-- City Description Section -->
+    <section id="city-description">
+        <h2>Discover Kolkata</h2>
+        <img src="https://images.unsplash.com/photo-1561909381-3d716364ad47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8a29sa2F0YXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=" A rainy night in Kolkata">
+        <p>Welcome to the City of Joy, the cultural and former capital of India. With an intellectual and a vibrant culture, this city is a true gem waiting to be explored.</p>
+    </section>
+    <hr>
+
+    <!-- Attractions Section -->
+    <section id="attractions">
+        <h2>Attractions</h2>
+        <h3>Main Attractions</h3>
+        <ul>
+            <li>Victoria Memorial</li>
+            <li>Howrah Bridge</li>
+            <li>Indian Museum</li>
+        </ul>
+        <h3>Local Favorites</h3>
+        <ol>
+            <li>Princep Ghat</li>
+            <li>Botanical Garden</li>
+            <li>Wax Museum</li>
+        </ol>
+    </section>
+    <hr>
+
+    <!-- City Statistics Section -->
+    <section id="city-statistics">
+        <h2>City Statistics</h2>
+        <table border="1">
+            <tr>
+                <th>Attribute</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Population</td>
+                <td>15 Million</td>
+            </tr>
+            <tr>
+                <td>Landmarks</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Parks</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Schools</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Beaches</td>
+                <td>2</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+
+    <!-- Citizen Feedback Section -->
+    <section id="citizen-feedback">
+        <h2>Citizen Feedback</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="rating">Favorite Attraction:</label>
+            <select id="rating" name="rating">
+                <option value="victoria memorial">Victoria Memorial</option>
+                <option value="howrah bridge">Howrah Bridge</option>
+                <option value="indian museum">Indian Museum</option>
+                <option value="princep ghat">Princep Ghat</option>
+                <option value="botanical garden">Botanical Garden</option>
+                <option value="wax museum">Wax Museum</option>
+            </select><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br>
+
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe"><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <hr>
+
+    <!-- Quotes from Citizens Section -->
+    <section id="quotes">
+        <h2>What Citizens Say</h2>
+        <p><span>"Kolkata is truly a magical place,"</span> says Rahul Khanna, a frequent visitor.</p>
+        <p><span>"I fell in love with Kolkata's charm,"</span> adds Raj Malhotra, a resident.</p>
+    </section>
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <address>
+            <p><i>Kolkata Tourism Office</i></p>
+            <p>150 Park Street</p>
+            <p><a href="tel:+913324567890">Phone: +913324567890</a></p>
+            <p><a href="mailto:info@kolkata.com">Email: info@kolkata.com</a></p>
+        </address>
+    </section>
+    <hr>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Kolkata Tourism. Dive into Dreams!</p>
+        </footer>
+</body>
+</html>
